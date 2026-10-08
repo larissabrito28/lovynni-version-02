@@ -1,0 +1,9 @@
+LOVYNNI — FRONT-END DE DEMONSTRAÇÃO
+
+1. Abra a pasta LOVYNNI-site no VS Code.
+2. Abra index.html usando Live Server.
+3. Arquivos: index.html, css/style.css, js/app.js e assets/.
+4. Para substituir imagens, coloque suas fotografias na pasta assets e ajuste os caminhos no js/app.js (produtos) e css/style.css (banner/essência).
+5. Favoritos e sacola funcionam localmente no navegador. Não há contas, pagamento, estoque nem banco de dados reais.
+6. As fotografias atuais são recortes da prévia visual gerada e devem ser substituídas pelas fotografias oficiais antes da publicação.
+7. O folder de abertura permanece com 2 segundos.

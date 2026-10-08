@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050520">
+  <meta name="description" content="LOVYNNI — moda autoral criada para almas intensas.">
+  <title>LOVYNNI | Criada para almas intensas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+
+<!-- ============ SPLASH — fiel às referências ============ -->
+<div class="splash" id="splash" aria-label="Abertura LOVYNNI">
+  <div class="splash-frame">
+
+
+    <!-- Monograma: lua crescente  -->
+    <div class="splash-mark" aria-hidden="true">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <!-- Lua crescente creme -->
+        <path d="M62 12
+                 a 46 46 0 1 0 32 78
+                 a 38 38 0 1 1 -32 -78 Z"
+              fill="#f5edd6"/>
+     
+      </svg>
+    </div>
+
+    <!-- Nome -->
+    <h1 class="splash-logo">Lovynni</h1>
+
+    <!-- Fileira de estrelas abaixo do nome -->
+    <div class="splash-stars">
+     
+    </div>
+
+    <!-- Slogan -->
+    <p class="splash-lema">queira, possa, seja.</p>
+    <p class="splash-sub">CRIADA PARA ALMAS INTENSAS</p>
+  </div>
+</div>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <nav class="header-nav header-nav--left" aria-label="Navegação principal">
+        <a href="#catalogo">CATÁLOGO</a>
+        <a href="#novidades">NOVIDADES</a>
+        <a href="#sobre">SOBRE</a>
+      </nav>
+
+      <a href="#inicio" class="brand" aria-label="LOVYNNI — início">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <!-- Lua crescente creme -->
+            <path d="M40 8
+                     a 32 32 0 1 0 22 54
+                     a 26 26 0 1 1 -22 -54 Z"
+                  fill="#f5edd6"/>
+          
+            <!-- Estrela pequena -->
+            <text x="58" y="30"
+                  font-family="Cormorant Garamond, serif"
+                  font-size="14"
+                  fill="#f5edd6" text-anchor="middle">✦</text>
+          </svg>
+        </span>
+        <span class="brand-word">Lovynni</span>
+      </a>
+
+      <nav class="header-nav header-nav--right" aria-label="Navegação secundária">
+        <button type="button" class="nav-icon" id="searchBtn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+        </button>
+        <button type="button" class="nav-icon" id="favoritesBtn" aria-label="Favoritos">
+          <svg viewBox="0 0 24 24"><path d="M20.5 5.5a5.4 5.4 0 0 0-7.6 0L12 6.4l-.9-.9a5.4 5.4 0 0 0-7.6 7.6L12 21l8.5-7.9a5.4 5.4 0 0 0 0-7.6Z"/></svg>
+          <span class="count" id="favoritesCount">0</span>
+        </button>
+        <button type="button" class="nav-icon" id="cartBtn" aria-label="Sacola">
+          <svg viewBox="0 0 24 24"><path d="M4 8h16l1 13H3L4 8Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg>
+          <span class="count" id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="search-bar" id="searchBar" hidden>
+      <div class="wrap">
+        <input type="search" id="searchInput" placeholder="buscar peças..." aria-label="Buscar peças">
+        <button type="button" id="searchClose" aria-label="Fechar busca">✕</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ============ HERO minimalista editorial ============ -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=1600&q=85"
+             alt="Editorial LOVYNNI" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-copy">
+        <h1>
+          criada para<br>
+          <em>almas intensas</em>
+        </h1>
+        <p class="hero-sub">queira, possa, seja.</p>
+        <span class="hero-rule"></span>
+        <p class="hero-brand">LOVYNNI · AUTORAL</p>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO ============ -->
+    <section id="catalogo" class="section section-dark">
+      <div class="wrap">
+        <header class="section-head section-head--center">
+          <h2 class="section-title section-title--light">CATÁLOGO</h2>
+          <p class="section-kicker">PEÇAS AUTORAIS PARA A SUA MELHOR VERSÃO.</p>
+        </header>
+
+        <div class="filters" id="filters">
+          <button class="filter-chip is-active" data-filter="all">Todas</button>
+          <button class="filter-chip" data-filter="vestidos">Vestidos</button>
+          <button class="filter-chip" data-filter="blusas">Blusas</button>
+          <button class="filter-chip" data-filter="calcas">Calças</button>
+          <button class="filter-chip" data-filter="acessorios">Acessórios</button>
+        </div>
+
+        <div class="product-grid product-grid--dark" id="catalogoGrid"></div>
+        <p class="empty-state" id="emptyState" hidden>Nenhuma peça encontrada.</p>
+      </div>
+    </section>
+
+    <!-- ============ NOVIDADES (2 produtos) ============ -->
+    <section id="novidades" class="section section-light">
+      <div class="wrap">
+        <header class="section-head section-head--center">
+          <h2 class="section-title">NOVIDADES</h2>
+          <p class="section-kicker">RECÉM-CHEGADAS NO ATELIÊ.</p>
+        </header>
+
+        <div class="product-grid product-grid--light product-grid--duo" id="novidadesGrid"></div>
+      </div>
+    </section>
+
+   <!-- ============ SOBRE NÓS ============ -->
+<section id="sobre" class="section section-manifesto">
+  <div class="wrap">
+    <div class="manifesto-frame">
+      <h2>Sobre nós</h2>
+      <p>
+        A Lovynni é feita para que você não tenha que escolher uma só versão de sí. Uma união de estilos
+        para todas ocasioes. 
+      </p>
+      <p>
+        <strong>queira, possa, seja.</strong>
+      </p>
+      <em class="manifesto-signature">Para almas intensas.</em>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contato">
+    <div class="wrap footer-top">
+      <div class="footer-brand">
+        <h2>Lovynni<span>✦</span></h2>
+        <p>criada para almas intensas.</p>
+        <em>queira, possa, seja.</em>
+      </div>
+      <div>
+        <h3>EXPLORE</h3>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#novidades">Novidades</a>
+        <a href="#sobre">Sobre nós</a>
+      </div>
+      <div>
+        <h3>ATENDIMENTO</h3>
+        <a href="mailto:lovynnibr@gmail.com">lovynnibr@gmail.com</a>
+        <span>Trocas, frete e pagamentos: em breve</span>
+      </div>
+      <div>
+        <h3>REDES SOCIAIS</h3>
+        <a href="#">@lovynni.br</a>
+        <span>Instagram e TikTok: em breve</span>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© <span id="year"></span> LOVYNNI · MODA AUTORAL</span>
+      <span>QUEIRA, POSSA, SEJA.</span>
+    </div>
+  </footer>
+
+  <!-- ============ OVERLAYS ============ -->
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="side-panel" id="sidePanel" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="panel-head">
+      <h2 id="panelTitle">Sua sacola</h2>
+      <button id="panelClose" aria-label="Fechar">✕</button>
+    </div>
+    <div id="panelBody" class="panel-body"></div>
+    <div id="panelFoot" class="panel-foot"></div>
+  </aside>
+
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
